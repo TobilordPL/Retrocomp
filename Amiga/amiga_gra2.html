@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RetroComp</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html"style="color:red">Główna</a></li>
+                <li><a href="../amiga.html"style="color:red">Amiga 600</a></li>
+                <li><a href="../commodore.html"style="color:red">Commodore C64</a></li>
+                <li><a href="../gameboy.html"style="color:red">GameBoy</a></li>
+                <li><a href="../nes.html"style="color:red">Nintendo Entertainment System</a></li>
+            </ul>
+        </nav>
+		<img src="../Images/mario.png" alt="../Images/mario.png" align="right">
+        <h1 class="title">EYE OF BEHOLDER</h1>
+    </header>
+	
+	<section class="mainPageContent">
+
+		<b>Eye of the Beholder </b> to komputerowa gra fabularna stworzona przez firmę Westwood Studios i wydana przez Strategic Simulations, Inc. w kwietniu 1990 roku. Tytuł ukazał się początkowo na MS-DOSa, a następnie stworzono porty na  komputer Amiga i konsole Sega CD, SNES. Wersja na MS-DOSa zawierała ścieżkę dźwiękową skomponowaną przez Paula S. Mudra, a na Segę CD stworzył ją Yuzo Koshiro.
+		Gra otrzymała dwie następne części: Eye of Beholder II: The Legend of Darkmoon (1991r.) oraz Eye of Beholder III: Assault on Myth Drannor (1993r.). Jednakowoż trzecia część nie została stworzona przez Westwood, gdyż zostało wykupione przez Virgin Interactive i pracowało wtedy nad inną grą, tylko przez Strategic Simulation które również należało Virgin Interactive.
+
+
+		<h2>FABUŁA</h2>
+
+		Akcja tej gry fabularnej ma miejsce w świecie Forgotten Realms. Główny bohater oraz jego towarzysze otrzymują za zadanie sprawdzenie ,w podziemia miasta Waterdeep, grasującego tam zła oraz pokonanie tytułowego Obserwatora (Beholder) Xanathara, grasującego w podziemiach miasta Waterdeep.
+		Po wejściu do podziemi miasta przejście zostaje zablokowane przez wstrząsy spowodowane przez
+		Xanathara i od tego momentu nie mają już innego wyjścia jak tylko zachodzić głębiej w mroki lochów Waterdeep.
+		Po pokonaniu Obserwatora, bohaterowie wracają na powierzchnię gdzie są traktowani jako bohaterowie. Nic więcej nie jest w zakończeniu wspominane oraz nie towarzyszy temu żadna grafika. Zostało to później zmienione w amigowym wydaniu, który zawierał animowane zakończenie.
+
+
+
+		<h2>ROZGRYWKA ORAZ POWSTAWANIE</h2>
+
+		 Eye of Beholder to gra z widokiem z pierwszej osoby w którym gracz przemieszcza się ze swoją drużyną po 3-wymiarowych lochach. Na początku gracz steruje czteroosobową drużyna, którą wybiera z pośród sześciu ras. Sterowanie polega na systemie wskaż i kliknij (point-and-click). Można zwiększyć rozmiar drużyny do 6 członków poprzez wskrzeszanie szkieletów martwych postaci niezależnych, lub poprzez znalezienie postaci niezależnych którzy są gotowi dołączyć do gracza. 
+	Możliwe było nawet importowanie drużyn do kolejnych części i granie nimi przez wszystkie 3 części.
+	Grafika do wersji na MS-DOSa została wykonana na Deluxe Paint oraz ponad 150 efektów dźwiękowych zostało umieszczonych w grze. 
+
+
+
+		<h2>ODBIÓR GRY</h2>
+		Gra spotkała się z głównie przeważająco dobrymi ocenami. Otrzymała w 1991 od czasopisma Dragon ocenę 5/5, był to numer 1 najlepszych gier kwietnia 1990r., a Dennis Owens z Computer Gaming World nazwał ją „oszałamiającą, genialną graficznie i agresywnie skomplikowaną”. Do połowy 1991 roku gra sprzedała się 150 000 kopii.
+	</section>
+	<aside>
+		<ol><a href="amiga_gra1.html"style="color:red">Another World</a></ol>
+        <ol><a href="amiga_gra3.html"style="color:red">Indiana Jones and the Last Crusade-The Graphic Adventure</a></ol>
+		
+		<img id="maleImg" src="../Images/Amiga/Eye_of_the_Beholder_1.png" alt="Eye of the Beholder" style="width:100%;max-width:300px">
+		<img id="maleImg2" src="../Images/Amiga/Eye_of_the_Beholder_2.png" alt="Eye of the Beholder" style="width:100%;max-width:300px">
+		<img id="maleImg3" src="../Images/Amiga/Eye_of_the_Beholder_3.png" alt="Eye of the Beholder" style="width:100%;max-width:300px">
+		<img id="maleImg4" src="../Images/Amiga/Eye_of_the_Beholder_4.png" alt="Eye of the Beholder" style="width:100%;max-width:300px">
+		<img id="maleImg5" src="../Images/Amiga/Eye_of_the_Beholder_5.png" alt="Eye of the Beholder" style="width:100%;max-width:300px">
+		<div id="myimgpow" class="imgpow">
+		<span class="krzyz">&times;</span>
+		<img class="imgpow-content" id="zdj01">
+		<div id="caption"></div>
+</aside>
+	<script>
+
+		// Pobiera zdjęcie
+		var imgpow = document.getElementById("myimgpow");
+
+		// Pomniejszony obraz powiększa się a jego "alt" zostaje opisem
+		var zdj = document.getElementById("maleImg");
+		var zdj2 = document.getElementById("maleImg2");
+		var zdj3 = document.getElementById("maleImg3");
+		var zdj4 = document.getElementById("maleImg4");
+		var zdj5 = document.getElementById("maleImg5");
+		var imgpowImg = document.getElementById("zdj01");
+		var captionText = document.getElementById("caption");
+		zdj.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj2.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj3.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj4.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj5.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		// Umieszcza Krzyżyk w rogu ekranu
+		var span = document.getElementsByClassName("krzyz")[0];
+
+		// Po naciśnięciu Krzyżyka obraz zmniejsza się
+		span.onclick = function() {
+			imgpow.style.display = "none";
+		}
+	</script>
+	
+</body>
+
+
+</html>

@@ -1,0 +1,172 @@
+/*Całość*/
+@font-face
+{
+    src: url(Font/fixedsys.ttf);
+    font-family: fixedsys;
+}
+body 
+{
+    background: rgba(0, 0, 0, 0.918);
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:fixedsys;
+    font-weight:lighter;
+    margin:0;
+    padding:0;   
+}
+.mainPageContent/*Tekst na stronie*/
+{
+    text-align: center;
+    color:rgb(101, 101, 231);
+}
+/*Nagłówek: obszar i tło*/
+header
+{
+    background:rgb(0, 0, 0);
+    background-image: url(Images/im11.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-weight:lighter;
+    border-style: dashed;
+    border-width: 2px;
+    border-color:  rgb(210, 153, 30);;
+    color:white;
+    min-height:250px;
+	height: auto;
+}
+/*Nagłówek: Mario*/
+header img
+{
+    padding: 15px; 
+    height: 200px;
+    width: 150px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/*Nagłówek: tytuł*/
+h1
+{
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: chocolate;
+	
+}
+
+/*Nagłówek: nawigacja*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-right: 15%;
+	top: 0;
+	width:75%;
+}
+
+li {
+	float: left;
+}
+/*Nagłówek: nawigacja-tekst */
+li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: underline;
+}
+
+li:first-child/*Pierwszy link*/
+{
+    margin-left:20%;
+}
+/*Linki po najechaniu na nie myszką*/
+li a:hover {
+	text-decoration-line: none;
+}
+
+.title{
+	padding-left:25%;
+	padding-right:20%;
+}
+section{
+	margin-top: 40px;
+	margin-right: 20px;
+	float: right;
+	width: 80%;
+	margin-bottom: 100px;
+}
+
+aside{
+	margin-top: 40px;
+	margin-left: 20px;
+	float: left;
+	width: 15%;
+}
+
+/* Style the Image Used to Trigger the imgpow */
+#obraz {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#obraz:hover {opacity: 0.7;}
+
+/* The imgpow (background) */
+.imgpow {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* imgpow Content (Image) */
+.imgpow-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of imgpow Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/*Krzyżyk przycisk w rogu */
+.krzyz {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.krzyz:hover,
+.krzyz:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
