@@ -16,7 +16,7 @@ body
 }
 .mainPageContent/*Tekst na stronie*/
 {
-    text-align: left;
+    text-align: justify;
     color:rgb(101, 101, 231);
 }
 /*Nagłówek: obszar i tło*/
@@ -45,7 +45,6 @@ header img
 	right: 0;
 }
 
-
 /*Nagłówek: tytuł*/
 h1
 {
@@ -55,6 +54,10 @@ h1
     text-decoration-line: underline;
     text-decoration-color: chocolate;
 	
+}
+
+h2{
+	text-align: center;	
 }
 
 /*Nagłówek: nawigacja*/
