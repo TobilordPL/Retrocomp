@@ -16,7 +16,7 @@ body
 }
 .mainPageContent/*Tekst na stronie*/
 {
-    text-align: right;
+    text-align: left;
     color:rgb(101, 101, 231);
 }
 /*Nagłówek: obszar i tło*/
