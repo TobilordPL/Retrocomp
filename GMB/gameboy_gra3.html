@@ -15,16 +15,78 @@
         
         <nav>
             <ul>
-                <li><a href="../index.html"style="color:red">Główna</a></li>
-                <li><a href="../amiga.html"style="color:red">Amiga 600</a></li>
-                <li><a href="../commodore.html"style="color:red">Commodore C64</a></li>
-                <li><a href="../gameboy.html"style="color:red">GameBoy</a></li>
-                <li><a href="../nes.html"style="color:red">Nintendo Entertainment System</a></li>
+                <li><a href="../index.html" style="color:red">Główna</a></li>
+                <li><a href="../amiga.html" style="color:red">Amiga 600</a></li>
+                <li><a href="../commodore.html" style="color:red">Commodore C64</a></li>
+                <li><a href="../gameboy.html" style="color:red">GameBoy</a></li>
+                <li><a href="../nes.html" style="color:red">Nintendo Entertainment System</a></li>
             </ul>
         </nav>
-		<img src="../Images/mario.png" alt="../Images/mario.png" align="right">
-        <h1 class="title">GameBoy</h1>
+		<img src="../Images/mario.png" alt="../Images/mario.png">
+        <h1 class="title">Tetris</h1>
     </header>
+
+    <section class="mainPageContent">
+	Tetris to radziecka gra w której układa się puzzle, oryginalnie zaprojektowana i zaprogramowana przez Aleksieja Pajitnova. Gra została wydana 6 czerwca 1984 r., Gdy pracował dla Dorodnicyn Computing Center Akademii Nauk ZSRR w Moskwie. Nazwa pochodzi od greckiego przedrostka numerycznego tetra- (wszystkie elementy gry zawierają cztery segmenty) i tenisa, ulubionego sportu Pajitnova.
+	Jest to również pierwsze oprogramowanie rozrywkowe eksportowane z ZSRR do USA i publikowane przez Spectrum HoloByte na Commodore 64 i IBM PC. Gra Tetris jest popularnym zastosowaniem tetromino, czteroelementowego specjalnego przypadku poliomino. Polyominoes są używane w popularnych łamigłówkach od co najmniej 1907 r., A imię nadał matematyk Solomon W. Golomb w 1953 r. Jednak nawet liczenie pentominoów jest datowane na starożytność.
+	Gra (lub jeden z jej wielu wariantów) jest dostępna na prawie każdą konsolę do gier wideo i system operacyjny komputera, a także na urządzeniach takich jak kalkulatory graficzne, telefony komórkowe, przenośne odtwarzacze multimedialne, urządzenia PDA, sieciowe odtwarzacze muzyki, był odtwarzany nawet na ścianach różnych budynków.
+	Podczas gdy wersje Tetris były sprzedawane na wiele domowych platform komputerowych z lat 80., a także na arkady, była to bardzo udana wersja podręczna dla Game Boy wprowadzonej na rynek w 1989 roku, która ustanowiła tę grę jako jedną z najpopularniejszych w historii. 100. numer Electronic Gaming Monthly uplasował Tetris na pierwszym miejscu jako „Najlepsza gra wszechczasów”. W 2007 r. Tetris zajął drugie miejsce w rankingu 100 najlepszych gier wideo wszech czasów IGN. W styczniu 2010 roku ogłoszono, że Tetris sprzedał ponad 170 milionów egzemplarzy, około 70 milionów kopii fizycznych i ponad 100 milionów egzemplarzy na telefony komórkowe, co czyni go najlepiej opłacaną grą wszechczasów.
+	Tetrimino to geometryczne kształty złożone z czterech kwadratowych bloków każdy. Losowa sekwencja Tetriminos spada na planszę (prostokątny pionowy trzon, zwany „studnią” lub „matrycą”). Celem gry jest manipulowanie tymi Tetrimino, przesuwając je na boki i obracając o jednostki 90 stopni, w celu stworzenia poziomej linii dziesięciu bloków bez przerw. Gdy taka linia zostanie utworzona, znika, a każdy blok powyżej usuniętej linii spadnie. Po wyczyszczeniu określonej liczby linii gra wchodzi na nowy poziom. W miarę postępu gry, każdy poziom powoduje, że Tetriminos spadają szybciej, a gra kończy się, gdy stos Tetriminos osiągnie szczyt pola gry i żaden nowy Tetriminos nie będzie mógł wejść. Niektóre gry również kończą się po skończonej liczbie poziomów lub linii.
+	Wszystkie Tetriminos są zdolne do pojedynczego i podwójnego czyszczenia. Ja, J i L są w stanie usunąć potrójne. Tylko I Tetrimino ma zdolność do wyczyszczenia czterech linii jednocześnie, co jest określane jako „tetris”. (Może się to różnić w zależności od zasad rotacji i kompensacji każdej konkretnej implementacji Tetris. 
+
+
+    </section>
+	
+	
+	<aside>
+        <ol><a href="../GMB/gameboy_gra1.html"style="color:red">Kwirk</a></ol>
+        <ol><a href="../GMB/gameboy_gra2.html"style="color:red">Super Mario Land</a></ol>
+		
+		<img id="maleImg" src="../Images/GMB/Tetris_1.jpg" alt="Tetris" style="width:100%;max-width:300px">
+		<img id="maleImg2" src="../Images/GMB/Tetris_2.jpg" alt="Tetris" style="width:100%;max-width:300px">
+		<img id="maleImg3" src="../Images/GMB/Tetris_3.jpg" alt="Tetris" style="width:100%;max-width:300px">
+		<div id="myimgpow" class="imgpow">
+		<span class="krzyz">&times;</span>
+		<img class="imgpow-content" id="zdj01">
+		<div id="caption"></div>
+		
+	</aside>
+	<script>
+
+		// Pobiera zdjęcie
+		var imgpow = document.getElementById("myimgpow");
+
+		// Pomniejszony obraz powiększa się a jego "alt" zostaje opisem
+		var zdj = document.getElementById("maleImg");
+		var zdj2 = document.getElementById("maleImg2");
+		var zdj3 = document.getElementById("maleImg3");
+		var zdj4 = document.getElementById("maleImg4");
+		var imgpowImg = document.getElementById("zdj01");
+		var captionText = document.getElementById("caption");
+		zdj.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj2.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj3.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		// Umieszcza Krzyżyk w rogu ekranu
+		var span = document.getElementsByClassName("krzyz")[0];
+
+		// Po naciśnięciu Krzyżyka obraz zmniejsza się
+		span.onclick = function() {
+			imgpow.style.display = "none";
+		}
+	</script>
 
 </body>
 
