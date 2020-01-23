@@ -23,8 +23,76 @@
             </ul>
         </nav>
 		<img src="../Images/mario.png" alt="../Images/mario.png" align="right">
-        <h1 class="title">Nintendo Entertainment System</h1>
+        <h1 class="title">Duck hunt</h1>
     </header>
+
+    <section class="mainPageContent">
+	Duck Hunt to strzelanka z 1984 roku z lekkimi strzelbami opracowana i wydana przez Nintendo na konsolę do gier Nintendo Entertainment System (NES). Gra została wydana po raz pierwszy w Japonii w kwietniu 1984 r. I została wydana jako gra premierowa dla NES w Ameryce Północnej w październiku 1985 r., A także w Europie dwa lata później.
+    W Duck Hunt gracze używają NES Zappera w połączeniu z telewizorem CRT, aby strzelać do kaczek pojawiających się na ekranie. Kaczki pojawiają się pojedynczo lub dwa, a gracz otrzymuje trzy strzały, aby je zestrzelić. Gracz otrzymuje punkty po wystrzeleniu każdej kaczki. Jeśli gracz wystrzeli wymaganą liczbę kaczek w jednej rundzie, przejdzie do następnej rundy; w przeciwnym razie gracz otrzyma koniec gry.
+    Gra początkowo otrzymała kilka recenzji, ale otrzymała łagodną krytykę. Przed wersją NES Nintendo stworzyło także grę Duck Hunt opartą na Laser Clay Shooting System wydaną w 1976 roku. Później była to gra typu pack-in, w połączeniu z Super Mario Bros .; paczka później zawierała również World Class Track Meet. Gra  została wydana jako tytuł wirtualnej konsoli dla Wii U w 2014 roku.
+    Duck Hunt to strzelanka, w której celem jest strzelanie do ruchomych celów na ekranie telewizora podczas lotu. Gra rozgrywana jest z perspektywy pierwszej osoby i wymaga lekkiego pistoletu NES Zapper, który gracz celuje i strzela w ekran. Wymaga również ekranu telewizora CRT, ponieważ pistolet Zapper nie będzie działał z telewizorami LCD ani HDTV. Każda runda składa się z dziesięciu celów do strzelania. W zależności od trybu gry, który gracz wybierze przed rozpoczęciem gry, jeden lub dwa cele pojawią się na ekranie w danym momencie, a gracz ma trzy strzały lub próby trafienia ich, zanim znikną.
+    Gracz musi strzelić minimalną liczbę celów, aby przejść do następnej rundy; niepowodzenie spowoduje zakończenie gry. Trudność wzrasta, gdy gracz przechodzi do wyższych rund; cele będą poruszać się szybciej, a minimalna liczba celów do strzelania wzrośnie. Gracz otrzymuje punkty po strzeleniu do celu, a także otrzymuje punkty bonusowe za strzelenie do wszystkich dziesięciu celów w jednej rundzie. Duck Hunt śledzi najwyższy wynik graczy we wszystkich grach rozgrywanych w jednej sesji; zostaje jednak utracony po wyłączeniu gry.
+    Duck Hunt ma trzy różne tryby gry do wyboru. W „Grze A” i „Grze B” celami są latające kaczki w obszarze leśnym, aw „Grze C” celami są gliniane gołębie, które są wystrzeliwane z dystansu z perspektywy gracza. W „Grze A” na ekranie pojawia się jedna kaczka naraz, aw „Grze B” naraz pojawiają się dwie kaczki. „Gra A” pozwala drugiemu graczowi kontrolować ruch latających kaczek za pomocą normalnego kontrolera NES. Rozgrywka rozpoczyna się w rundzie 1 i może trwać do rundy 99. Jeśli gracz ukończy rundę 99, przejdzie do rundy 0, czyli ekranu zabijania (w „Grze A”), w którym gra zachowuje się nieregularnie, na przykład cele, które poruszają się przypadkowo lub wcale się nie pojawiają, i ostatecznie się kończą.
+	
+    </section>
+	
+
+	
+	<aside>
+        <ol><a href="../NES/nes_gra2.html"style="color:red">Super Mario bros</a></ol>
+        <ol><a href="../NES/nes_gra3.html"style="color:red">The legend of Zelda</a></ol>
+		
+		<img id="maleImg" src="../Images/NES/Duck_1.jpg" alt="Duck hunt" style="width:100%;max-width:300px">
+		<img id="maleImg2" src="../Images/NES/Duck_2.jpg" alt="Duck hunt" style="width:100%;max-width:300px">
+		<img id="maleImg3" src="../Images/NES/Duck_3.jpg" alt="Duck hunt" style="width:100%;max-width:300px">
+		<img id="maleImg4" src="../Images/NES/Duck_4.jpg" alt="Duck hunt" style="width:100%;max-width:300px">
+		<div id="myimgpow" class="imgpow">
+		<span class="krzyz">&times;</span>
+		<img class="imgpow-content" id="zdj01">
+		<div id="caption"></div>
+		
+	</aside>
+	<script>
+
+		// Pobiera zdjęcie
+		var imgpow = document.getElementById("myimgpow");
+
+		// Pomniejszony obraz powiększa się a jego "alt" zostaje opisem
+		var zdj = document.getElementById("maleImg");
+		var zdj2 = document.getElementById("maleImg2");
+		var zdj3 = document.getElementById("maleImg3");
+		var zdj4 = document.getElementById("maleImg4");
+		var imgpowImg = document.getElementById("zdj01");
+		var captionText = document.getElementById("caption");
+		zdj.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj2.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj3.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj4.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		// Umieszcza Krzyżyk w rogu ekranu
+		var span = document.getElementsByClassName("krzyz")[0];
+
+		// Po naciśnięciu Krzyżyka obraz zmniejsza się
+		span.onclick = function() {
+			imgpow.style.display = "none";
+		}
+	</script>
 
 </body>
 

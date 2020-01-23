@@ -23,8 +23,75 @@
             </ul>
         </nav>
 		<img src="../Images/mario.png" alt="../Images/mario.png" align="right">
-        <h1 class="title">Nintendo Entertainment System</h1>
+        <h1 class="title">The legend of Zelda</h1>
     </header>
+
+    <section class="mainPageContent">
+	The Legend of Zelda, zatytułowany The Hyrule Fantasy w swoim oryginalnym wydaniu, to gra wideo z 1986 roku opracowana i wydana przez Nintendo, wydana w Ameryce Północnej w 1987 roku i zaprojektowana przez Shigeru Miyamoto i Takashi Tezuka. Akcja gry osadzona jest w krainie fantasy Hyrule i koncentruje się na chłopcu o imieniu Link, grywalnym bohaterze, którego celem jest zebranie ośmiu fragmentów Trójmocy Mądrości, aby uratować księżniczkę Zeldę przed antagonistą Ganonem. W trakcie gry gracz widzi Link z góry i musi nawigować przez świat i kilka lochów, pokonując wrogów i znajdując po drodze sekrety.
+    The Legend of Zelda był bestsellerem dla Nintendo, sprzedając ponad 6,5 miliona egzemplarzy. Często pojawia się na listach gier uważanych za największe lub najbardziej wpływowe i uważany jest za duchowego prekursora gry fabularnej. W grze pojawiła się samotna kontynuacja, kilka prequeli i wiele dodatkowych gier; seria stała się jedną z najpopularniejszych na Nintendo.
+    The Legend of Zelda zawiera elementy gier akcji, przygodowych i RPG. Gracz kontroluje Link z perspektywy z góry na ekranie, gdy podróżuje po świecie, dużej mapie na zewnątrz w różnych środowiskach. Link rozpoczyna grę uzbrojoną tylko w małą tarczę, ale Link staje się dostępny, gdy zapuści się w jaskinię dostępną z pierwszego ekranu mapy gry. W trakcie gry kupcy, mieszczanie i inni prowadzą link do tajemniczych wskazówek. Ludzie ci są rozproszeni po całym świecie i schowani w jaskiniach, krzewach lub za ścianami lub wodospadami.
+    Postępy Barring Link to stworzenia, z którymi musi walczyć, aby zlokalizować wejścia do dziewięciu podziemnych lochów. Każde lochy to wyjątkowa, przypominająca labirynt kolekcja pokoi połączonych drzwiami i tajnymi przejściami, strzeżonych przez potwory inne niż te znajdujące się na powierzchni. Lochy ukrywają również przydatne narzędzia, które Link może dodać do swojego arsenału, takie jak bumerang do odzyskiwania odległych przedmiotów i oszałamiających wrogów oraz rejestrator o magicznych właściwościach. Link musi pomyślnie przejść przez każde z pierwszych ośmiu lochów, aby uzyskać wszystkie osiem elementów Trójmocy Mądrości. Po ukończeniu artefaktu może wejść do dziewiątego lochu, aby uratować Zeldę. Oprócz tego wyjątku, kolejność wykonywania lochów jest nieco pozostawiona graczowi, chociaż stopniowo zwiększają trudność, a niektóre z nich można osiągnąć lub ukończyć tylko za pomocą przedmiotów zdobytych w poprzednim. Link może swobodnie wędrować po świecie, znajdując i kupując przedmioty w dowolnym momencie. Ta elastyczność umożliwia nietypowe sposoby grania w grę. Na przykład możliwe jest dotarcie do ostatniego bossa w grze bez otrzymania miecza.
+    Po ukończeniu gry gracz ma dostęp do trudniejszej misji, oficjalnie zwanej „drugą misją”, w której lochy i rozmieszczenie przedmiotów są różne, a wrogowie silniejsi. Chociaż ta trudniejsza „powtórka” nie była unikalna dla Zelda, niewiele gier oferowało zupełnie inne poziomy do ukończenia podczas drugiej rozgrywki. Drugie zadanie można odtworzyć za każdym razem, gdy gra jest ukończona, a także można uzyskać do niego dostęp w dowolnym momencie, uruchamiając nowy plik o nazwie „ZELDA”.
+
+
+    </section>
+	
+	
+	<aside>
+        <ol><a href="../NES/nes_gra1.html"style="color:red">Duck hunt</a></ol>
+        <ol><a href="../NES/nes_gra2.html"style="color:red">Super Mario bros</a></ol>
+		
+		<img id="maleImg" src="../Images/NES/Zelda_1.jpg" alt="The legend of Zelda" style="width:100%;max-width:300px">
+		<img id="maleImg2" src="../Images/NES/Zelda_2.png" alt="The legend of Zelda" style="width:100%;max-width:300px">
+		<img id="maleImg3" src="../Images/NES/Zelda_3.jpg" alt="The legend of Zelda" style="width:100%;max-width:300px">
+		<img id="maleImg4" src="../Images/NES/Zelda_4.png" alt="The legend of Zelda" style="width:100%;max-width:300px">
+		<div id="myimgpow" class="imgpow">
+		<span class="krzyz">&times;</span>
+		<img class="imgpow-content" id="zdj01">
+		<div id="caption"></div>
+		
+	</aside>
+	<script>
+
+		// Pobiera zdjęcie
+		var imgpow = document.getElementById("myimgpow");
+
+		// Pomniejszony obraz powiększa się a jego "alt" zostaje opisem
+		var zdj = document.getElementById("maleImg");
+		var zdj2 = document.getElementById("maleImg2");
+		var zdj3 = document.getElementById("maleImg3");
+		var zdj4 = document.getElementById("maleImg4");
+		var imgpowImg = document.getElementById("zdj01");
+		var captionText = document.getElementById("caption");
+		zdj.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj2.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj3.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		zdj4.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		// Umieszcza Krzyżyk w rogu ekranu
+		var span = document.getElementsByClassName("krzyz")[0];
+
+		// Po naciśnięciu Krzyżyka obraz zmniejsza się
+		span.onclick = function() {
+			imgpow.style.display = "none";
+		}
+	</script>
 
 </body>
 
