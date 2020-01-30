@@ -61,6 +61,10 @@ h2{
 }
 
 /*Nagłówek: nawigacja*/
+#nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
 ul {
 	list-style-type: none;
 	margin: 0;
