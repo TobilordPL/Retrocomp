@@ -112,13 +112,13 @@ aside{
 }
 
 /* Mały obraz */
-.aside.img {
+aside img {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-.aside.img:hover {
+aside img:hover {
 	opacity: 0.7;
 }
 
