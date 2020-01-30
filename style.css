@@ -70,7 +70,7 @@ nav{
 	text-align: center;
 }
 nav li{
-	
+	z-index: 2;
 	display: inline;
 }
 nav a{
@@ -78,10 +78,10 @@ nav a{
 	display: inline-block;
 	padding: 10px;
 }
-/*Nagłówek: nawigacja-tekst */
 
 /*Linki po najechaniu na nie myszką*/
 li a:hover {
+	z-index: 2;
 	text-decoration-line: none;
 }
 
