@@ -50,7 +50,37 @@
             alt="Poprawny CSS!" />
     </a>
 	</p>
+
+	<img id="maleImg" src="Images/mario.png" alt="Mario" style="width:100%;max-width:300px">
+		<div id="myimgpow" class="imgpow">
+		<span class="krzyz">&times;</span>
+		<img class="imgpow-content" id="zdj01">
+		<div id="caption"></div>
+			
 	</aside>
+		<script>
+
+		// Pobiera zdjęcie
+		var imgpow = document.getElementById("myimgpow");
+
+		// Pomniejszony obraz powiększa się a jego "alt" zostaje opisem
+		var zdj = document.getElementById("maleImg");
+		var imgpowImg = document.getElementById("zdj01");
+		var captionText = document.getElementById("caption");
+		zdj.onclick = function(){
+			imgpow.style.display = "block";
+			imgpowImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		// Umieszcza Krzyżyk w rogu ekranu
+		var span = document.getElementsByClassName("krzyz")[0];
+
+		// Po naciśnięciu Krzyżyka obraz zmniejsza się
+		span.onclick = function() {
+			imgpow.style.display = "none";
+		}
+	</script>
+
 </body>
 
 </html>
