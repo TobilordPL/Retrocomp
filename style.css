@@ -1,4 +1,8 @@
 /*Całość*/
+*{
+	margin:0px;
+	padding:0px;
+}
 @font-face
 {
     src: url(Font/fixedsys.ttf);
