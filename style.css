@@ -43,6 +43,7 @@ header img
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 1;
 }
 
 /*Nagłówek: tytuł*/
@@ -62,17 +63,18 @@ h2{
 
 /*Nagłówek: nawigacja*/
 nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+	z-index: 2;
+	list-style: none;
+  	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 nav li{
-    display:inline;
+	display: inline;
 }
 nav a{
-    display:inline-block;
-    padding:10px;
+	display: inline-block;
+	padding: 10px;
 }
 /*Nagłówek: nawigacja-tekst */
 
@@ -82,16 +84,16 @@ li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .nav li, nav a{
-    float: none;
-    display: block;
+.nav li, nav a{
+	float: none;
+	display: block;
   }
 
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+.nav a {
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: none;
   }
 }
 
